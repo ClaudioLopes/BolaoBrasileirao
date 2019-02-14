@@ -7,7 +7,23 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-input type="text" value="Username"></ion-input>
-  <ion-button color="success" [routerLink]="['/principal']">Entrar</ion-button>
-  <ion-button [routerLink]="['/cadastro']">cadastrar</ion-button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+      </ion-col>
+
+      <ion-col col-4>
+        <ion-icon name="contact" style="zoom:7.0;"></ion-icon>
+      </ion-col>
+
+      <ion-col col-4>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-input type="text" placeholder="Nick Name" autofocus="true"><ion-icon name="person"></ion-icon></ion-input>
+  <ion-input type="password" placeholder="Senha"><ion-icon name="key"></ion-icon></ion-input>
+  <ion-button color="success" [routerLink]="['/principal']"><ion-icon name="unlock"></ion-icon> Entrar</ion-button>
+  <ion-button [routerLink]="['/cadastro']"><ion-icon name="clipboard"></ion-icon> cadastrar</ion-button>
 </ion-content>
